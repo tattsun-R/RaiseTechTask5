@@ -16,7 +16,9 @@ public class Main {
             int diceCount = count[i];
             double probability = (double) diceCount / totalRolls * 100;
 
-            System.out.println("出目 " + diceNumber + ": " + diceCount + " 回, 確率 " + probability + "%");
+            String formattedProbability = String.format("%.1f", probability);
+
+            System.out.println("出目 " + diceNumber + ": " + diceCount + " 回, 確率 " + formattedProbability + "%");
         }
     }
 }
